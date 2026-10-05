@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+
+            background-image:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("background.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            max-width: 1400px;
+            margin: auto;
+            background: rgba(255,255,255,0.94);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1000px;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #283593;
+            color: white;
+            padding: 16px 10px;
+            border: 1px solid white;
+        }
+
+        td {
+            text-align: center;
+            padding: 15px 10px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+
+        .day {
+            background: #3949ab;
+            color: white;
+        }
+
+        .break {
+            background: #ffcc80;
+            color: #5d4037;
+        }
+
+        .lunch {
+            background: #a5d6a7;
+            color: #1b5e20;
+        }
+
+        .lab {
+            background: #b3e5fc;
+            color: #01579b;
+        }
+
+        .project {
+            background: #f8bbd0;
+            color: #880e4f;
+        }
+
+        tr:hover td {
+            background: #e8eaf6;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> CLASS TIMETABLE</h1>
+
+    <p class="subtitle">
+        Computer Science & Engineering
+    </p>
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Day / Time</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 11:15</th>
+                <th>11:15 - 12:15</th>
+                <th>12:15 - 1:15</th>
+                <th>1:15 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+            </tr>
+
+            <tr>
+                <td class="day">Monday</td>
+                <td>Java</td>
+                <td>DBMS</td>
+                <td class="break" rowspan="5">BREAK</td>
+                <td>Web Technology</td>
+                <td>Python</td>
+                <td class="lunch" rowspan="5">LUNCH</td>
+                <td>Operating System</td>
+                <td class="lab">Java Lab</td>
+            </tr>
+
+            <tr>
+                <td class="day">Tuesday</td>
+                <td>Python</td>
+                <td>Java</td>
+                <td>DBMS</td>
+                <td>Web Technology</td>
+                <td>Computer Networks</td>
+                <td class="lab">Python Lab</td>
+            </tr>
+
+            <tr>
+                <td class="day">Wednesday</td>
+                <td>DBMS</td>
+                <td>Operating System</td>
+                <td>Java</td>
+                <td>Computer Networks</td>
+                <td>Web Technology</td>
+                <td class="lab">DBMS Lab</td>
+            </tr>
+
+            <tr>
+                <td class="day">Thursday</td>
+                <td>Web Technology</td>
+                <td>Python</td>
+                <td>Operating System</td>
+                <td>Java</td>
+                <td>Computer Networks</td>
+                <td class="lab">Web Lab</td>
+            </tr>
+
+            <tr>
+                <td class="day">Friday</td>
+                <td>Computer Networks</td>
+                <td>DBMS</td>
+                <td>Python</td>
+                <td>Operating System</td>
+                <td>Java</td>
+                <td class="project">Project Work</td>
+            </tr>
+
+            <tr>
+                <td class="day">Saturday</td>
+                <td class="lab">Java Lab</td>
+                <td class="lab">Python Lab</td>
+                <td class="break">BREAK</td>
+                <td class="project">Project Work</td>
+                <td>Seminar</td>
+                <td class="lunch">LUNCH</td>
+                <td>Sports</td>
+                <td>Library</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="footer">
+        © 2026 College Timetable
+    </div>
+
+</body>
+</html>
